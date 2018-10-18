@@ -4,7 +4,7 @@ import Content from './Content'
 
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <div>
         <Header />

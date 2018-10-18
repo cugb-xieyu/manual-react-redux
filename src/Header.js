@@ -1,23 +1,23 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from './react-redux'
 
 class Header extends Component {
-    static propTypes = {
-        themeColor: PropTypes.string
-    }
+  static propTypes = {
+    themeColor: PropTypes.string
+  }
 
-    render () {
-        return (
-            <h1 style={{color: this.props.themeColor}}>This is header</h1>
-        )
-    }
+  render() {
+    return (
+      <h1 style={{ color: this.props.themeColor }}>This is header</h1>
+    )
+  }
 }
 
 const mapStateToProps = (state) => {
-    return {
-        themeColor: state.themeColor
-    }
+  return {
+    themeColor: state.themeColor
+  }
 }
 Header = connect(mapStateToProps)(Header)
 
