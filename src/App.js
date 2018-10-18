@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Content from './Content'
 
-import createStore from './store'
-import themeReducer from './reducer'
-
-const store = createStore(themeReducer)
 
 class App extends Component {
   render () {
